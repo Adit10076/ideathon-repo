@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>PECResolve</title>
+</head>
+<body class="bg-deepBlue">
+    <div class="w-full h-full">
+        <!-- Navbar -->
+        <div class="navbar">
+            <nav class="bg-deepBlue">
+                <div class="relative w-[1080px] mx-auto flex items-center justify-around">
+                    <!-- Logo -->
+                    <a href="#" class="lg:py-7 lg:pr-7 cursor-pointer">
+                        <img src="./logo.jpg" width="125px" height="30px" class="rounded-full" />
+                    </a>
+                    <!-- Navigation Links -->
+                    <ul class="hidden lg:flex gap-8">
+                        <li class="cursor-pointer text-white font-mullish py-7 hover:text-lightBlue transition-all duration-200 relative group">
+                            <a href="#">Home</a>
+                            <div class="absolute bottom-0 w-full h-1 bg-lightBlue invisible group-hover:visible rounded-sm group-hover:animate-pulse"></div>
+                        </li>
+                        <li class="cursor-pointer text-white font-mullish py-7 hover:text-lightBlue transition-all duration-200 relative group">
+                            <a href="#">Lost & Found</a>
+                            <div class="absolute bottom-0 w-full h-1 bg-lightBlue invisible group-hover:visible rounded-sm group-hover:animate-pulse"></div>
+                        </li>
+                        <li class="cursor-pointer text-white font-mullish py-7 hover:text-lightBlue transition-all duration-200 relative group">
+                            <a href="#">Contact</a>
+                            <div class="absolute bottom-0 w-full h-1 bg-lightBlue invisible group-hover:visible rounded-sm group-hover:animate-pulse"></div>
+                        </li>
+                        <li class="cursor-pointer text-white font-mullish py-7 hover:text-lightBlue transition-all duration-200 relative group">
+                            <a href="#">About Us</a>
+                            <div class="absolute bottom-0 w-full h-1 bg-lightBlue invisible group-hover:visible rounded-sm group-hover:animate-pulse"></div>
+                        </li>
+                    </ul>
+                    <!-- Action Buttons -->
+                    <div class="flex gap-4 group">
+                        <div class="py-3 px-5 font-mullish rounded-sm text-sm text-white border-lightBlue border font-bold group-hover:cursor-pointer hover:bg-lightBlue300 transition-all duration-400">
+                            Log in
+                        </div>
+                        <div class="hidden lg:block py-3 px-5 font-mullish rounded-sm text-sm bg-white text-lightBlue300 hover:text-lightBlue500 border font-bold group-hover:cursor-pointer transition-all duration-200">
+                            Sign Up &#8594;
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <!-- Hero Section -->
+        <div class="relative bg-deepBlue overflow-hidden">
+            <div class="flex flex-col lg:flex-row items-center justify-around mx-auto pl-10 relative">
+                <!-- Left Section -->
+                <div class="flex flex-col gap-8 text-white border-r pr-10">
+                    <h1 class="text-white font-bold font-mullish text-[40px] leading-[1.2] pt-10">
+                        Stay Connected, Stay Resolved
+                    </h1>
+                    <span class="font-bold font-mullish text-[40px] text-greenLight">-The PECResolve Way!</span>
+                    <div class="w-6 h-1 bg-greenLight"></div>
+                    <div class="text-white font-mullish text-[17px] opacity-80 pr-10">
+                        <span class="font-bold">PECResolve</span> is a centralized digital platform designed to efficiently address and resolve<br>
+                        grievances raised by students, faculty, and staff. This system aims to streamline <br>
+                        the process of lodging complaints, tracking their status, and ensuring timely resolutions.
+                    </div>
+                    <!-- Action Buttons -->
+                    <div class="flex gap-4 mb-10">
+                        <div class="bg-lightBlue text-white rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 h-[45px] w-[150px] px-2 py-3 hover:cursor-pointer hover:scale-110">
+                            Go To Dashboard
+                        </div>
+                        <div class="bg-lightBlue text-white rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 h-[45px] w-[170px] px-2 py-3 hover:cursor-pointer hover:scale-110">
+                            Submit a Complaint
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Section -->
+                <div class="flex flex-col gap-4">
+                    <div class="h-[400px] w-[500px] border-lightBlue300 border justify-center shadow-2xl rounded-2xl bg-[url(./PEC-img.webp)] bg-cover bg-blend-soft-light">
+                      <!--Complaints-->
+                      <div class=" border border-lightBlue300 rounded-2xl"><h1 class="font-bold text-white hover:scale-110 text-center" style = "text-decoration: underline;">Recent Complaints</h1></div>
+                      <h1 class="font-bold pl-[200px] pt-[170px] text-red-700"><a class="bg-white opacity-60" href="#">No Complaints Yet!</a></h1>
+                    </div>
+                  </div>
+                  
+            </div>
+        </div>
+    </div>
+</body>
+</html>
