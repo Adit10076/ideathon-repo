@@ -1,184 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
     <title>PECResolve</title>
-</head>
-<style>
-    /* Style for all anchor tags (links) */
+  </head>
+  <style>
     .aRagging {
-        color: blue;
-        /* Set link color to blue */
-        text-decoration: underline;
-        /* Make the link underlined */
+      color: blue;
+      text-decoration: underline;
     }
-
-    /* Optional: Style for links on hover */
     .aRagging:hover {
-        color: darkblue;
-        /* Darker blue on hover */
-        text-decoration: underline;
-        /* Keep underline on hover */
+      color: darkblue;
+      text-decoration: underline;
     }
-</style>
+  </style>
 
-<body class="overflow-x-hidden bg-deepBlue">
+  <body class="overflow-x-hidden">
     <div class="w-full h-full">
-        <!-- Navbar -->
-        <div class="navbar sticky top-0 z-10 w-full">
-            <nav class="bg-deepBlue">
-                <div class=" mx-auto flex items-center justify-around">
-                    <!-- Logo -->
-                    <a href="#" class="lg:py-7 lg:pr-7 cursor-pointer">
-                        <img src="./logo.jpg" width="125px" height="30px" class="rounded-full" />
-                    </a>
-                    <!-- Navigation Links -->
-                    <ul class="hidden lg:flex gap-8">
-                        <li
-                            class="cursor-pointer text-white font-mullish py-7 hover:text-lightBlue transition-all duration-200 relative group">
-                            <a href="#">Home</a>
-                            <div
-                                class="absolute bottom-0 w-full h-1 bg-lightBlue invisible group-hover:visible rounded-sm group-hover:animate-pulse">
-                            </div>
-                        </li>
-                        <li
-                            class="cursor-pointer text-white font-mullish py-7 hover:text-lightBlue transition-all duration-200 relative group">
-                            <a href="#">Lost & Found</a>
-                            <div
-                                class="absolute bottom-0 w-full h-1 bg-lightBlue invisible group-hover:visible rounded-sm group-hover:animate-pulse">
-                            </div>
-                        </li>
-                        <li
-                            class="cursor-pointer text-white font-mullish py-7 hover:text-lightBlue transition-all duration-200 relative group">
-                            <a href="#">Contact</a>
-                            <div
-                                class="absolute bottom-0 w-full h-1 bg-lightBlue invisible group-hover:visible rounded-sm group-hover:animate-pulse">
-                            </div>
-                        </li>
-                        <li
-                            class="cursor-pointer text-white font-mullish py-7 hover:text-lightBlue transition-all duration-200 relative group">
-                            <a href="#">About Us</a>
-                            <div
-                                class="absolute bottom-0 w-full h-1 bg-lightBlue invisible group-hover:visible rounded-sm group-hover:animate-pulse">
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- Action Buttons -->
-                    <div class="flex gap-4 group">
-                        <div
-                            class="py-3 px-5 font-mullish rounded-sm text-sm text-white border-lightBlue border font-bold group-hover:cursor-pointer hover:bg-lightBlue300 transition-all duration-400">
-                            Log in
-                        </div>
-                        <div
-                            class="hidden lg:block py-3 px-5 font-mullish rounded-sm text-sm bg-white text-lightBlue300 hover:text-lightBlue500 border font-bold group-hover:cursor-pointer transition-all duration-200">
-                            Sign Up &#8594;
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-        <!-- Hero Section -->
-        <div class="relative bg-deepBlue overflow-hidden pb-10">
-            <div class="flex flex-col lg:flex-row items-center justify-around mx-auto pl-10 relative">
-                <!-- Left Section -->
-                <div class="flex flex-col gap-8 text-white border-r pr-10">
-                    <h1 class="text-white font-bold font-mullish text-[40px] leading-[1.2] pt-10">
-                        Stay Connected, Stay Resolved
-                    </h1>
-                    <span class="font-bold font-mullish text-[40px] text-greenLight">-The PECResolve Way!</span>
-                    <div class="w-6 h-1 bg-greenLight"></div>
-                    <div class="text-white font-mullish text-[17px] opacity-80 pr-10">
-                        <span class="font-bold">PECResolve</span> is a centralized digital
-                        platform designed to efficiently address and resolve<br />
-                        grievances raised by students, faculty, and staff. This system
-                        aims to streamline <br />
-                        the process of lodging complaints, tracking their status, and
-                        ensuring timely resolutions.
-                    </div>
-                    <!-- Action Buttons -->
-                    <div class="flex gap-4 mb-10">
-                        <div
-                            class="bg-lightBlue text-white rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 h-[45px] w-[150px] px-2 py-3 hover:cursor-pointer hover:scale-110">
-                            Go To Dashboard
-                        </div>
-                        <div
-                            class="bg-lightBlue text-white rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 h-[45px] w-[170px] px-2 py-3 hover:cursor-pointer hover:scale-110">
-                            Submit a Complaint
-                        </div>
-                    </div>
-                </div>
-                <!-- Right Section -->
-                <div class="flex flex-col gap-4">
-                    <div
-                        class="h-[400px] w-[500px] border-lightBlue300 border justify-center shadow-2xl rounded-2xl bg-[url(./PEC-img.webp)] bg-cover bg-blend-soft-light">
-                        <!--Complaints-->
-                        <div class="border border-lightBlue300 rounded-2xl">
-                            <h1 class="font-bold text-white hover:scale-110 text-center"
-                                style="text-decoration: underline">
-                                Recent Complaints
-                            </h1>
-                        </div>
-                        <h1 class="font-bold pl-[200px] pt-[170px] text-red-700">
-                            <a class="bg-white opacity-60" href="#">No Complaints Yet!</a>
-                        </h1>
-                    </div>
-                </div>
+      <!-- Navbar -->
+      <div class="navbar sticky top-0 z-10 w-full">
+        <nav class="bg-deepBlue">
+          <div class="mx-auto flex items-center justify-around">
+            <!-- Logo -->
+            <a href="#" class="lg:py-7 lg:pr-7 cursor-pointer">
+              <img
+                src="./logo.jpg"
+                width="125px"
+                height="30px"
+                class="rounded-full"
+              />
+            </a>
+            <!-- Navigation Links -->
+            <ul class="hidden lg:flex gap-8">
+              <li
+                class="cursor-pointer text-white font-mullish py-7 hover:text-lightBlue transition-all duration-200 relative group"
+              >
+                <a href="#">Home</a>
+                <div
+                  class="absolute bottom-0 w-full h-1 bg-lightBlue invisible group-hover:visible rounded-sm group-hover:animate-pulse"
+                ></div>
+              </li>
+              <li
+                class="cursor-pointer text-white font-mullish py-7 hover:text-lightBlue transition-all duration-200 relative group"
+              >
+                <a href="#">Lost & Found</a>
+                <div
+                  class="absolute bottom-0 w-full h-1 bg-lightBlue invisible group-hover:visible rounded-sm group-hover:animate-pulse"
+                ></div>
+              </li>
+              <li
+                class="cursor-pointer text-white font-mullish py-7 hover:text-lightBlue transition-all duration-200 relative group"
+              >
+                <a href="#">Contact</a>
+                <div
+                  class="absolute bottom-0 w-full h-1 bg-lightBlue invisible group-hover:visible rounded-sm group-hover:animate-pulse"
+                ></div>
+              </li>
+              <li
+                class="cursor-pointer text-white font-mullish py-7 hover:text-lightBlue transition-all duration-200 relative group"
+              >
+                <a href="#">About Us</a>
+                <div
+                  class="absolute bottom-0 w-full h-1 bg-lightBlue invisible group-hover:visible rounded-sm group-hover:animate-pulse"
+                ></div>
+              </li>
+            </ul>
+            <!-- Action Buttons -->
+            <div class="flex gap-4 group">
+              <div
+                class="py-3 px-5 font-mullish rounded-sm text-sm text-white border-lightBlue border font-bold group-hover:cursor-pointer hover:bg-lightBlue300 transition-all duration-400"
+              >
+                Log in
+              </div>
+              <div
+                class="hidden lg:block py-3 px-5 font-mullish rounded-sm text-sm bg-white text-lightBlue300 hover:text-lightBlue500 border font-bold group-hover:cursor-pointer transition-all duration-200"
+              >
+                Sign Up &#8594;
+              </div>
             </div>
-        </div>
-        <!-- Anti Ragging -->
-        <div class="bg-deepBlue border-t-2 m-5">
-            <h1 class="text-center pt-10 font-bold font-mullish text-[48px] text-greenLight">
-                Know About The Anti-Ragging Policies
+          </div>
+        </nav>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="relative bg-deepBlue overflow-hidden pb-10">
+        <div
+          class="flex flex-col lg:flex-row items-center justify-around mx-auto pl-10 relative"
+        >
+          <!-- Left Section -->
+          <div class="flex flex-col gap-8 text-white border-r pr-10">
+            <h1
+              class="text-white font-bold font-mullish text-[40px] leading-[1.2] pt-10"
+            >
+              Stay Connected, Stay Resolved
             </h1>
-            <div class="w-full h-full ml-10 flex justify-around">
-                <!-- Left -->
-                <div class="flex flex-col gap-6 pt-10 m-10 mb-10 pb-10 ">
-                    <h1 class="font-bold font-mullish text-[40px] text-greenLight role inline-block
-                     w-fit h-fit p-10 rounded-2xl shadow-2xl opacity-80"></h1>
-                    <!-- Anti Ragging Details -->
-                    <div class="flex gap-4 hover:scale-110 drop-shadow-glow">
-                        <p class="text-[20px] font-mullish border flex flex-col p-5 rounded-2xl shadow-2xl text-white">
-                            To register Antiragging Grievances<br />
-                            please, go to the AntiRagging website:<br />
-                            <a href="https://www.antiragging.in" target="_blank"
-                                class="aRagging">https://www.antiragging.in</a><br /><br />
+            <span class="font-bold font-mullish text-[40px] text-greenLight"
+              >-The PECResolve Way!</span
+            >
+            <div class="w-6 h-1 bg-greenLight"></div>
+            <div class="text-white font-mullish text-[17px] opacity-80 pr-10">
+              <span class="font-bold">PECResolve</span> is a centralized digital
+              platform designed to efficiently address and resolve<br />
+              grievances raised by students, faculty, and staff. This system
+              aims to streamline <br />
+              the process of lodging complaints, tracking their status, and
+              ensuring timely resolutions.
+            </div>
+            <!-- Action Buttons -->
+            <div class="flex gap-4 mb-10">
+              <div
+                class="bg-lightBlue text-white rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 h-[45px] w-[150px] px-2 py-3 hover:cursor-pointer hover:scale-110"
+              >
+                Go To Dashboard
+              </div>
+              <div
+                class="bg-lightBlue text-white rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 h-[45px] w-[170px] px-2 py-3 hover:cursor-pointer hover:scale-110"
+              >
+                Submit a Complaint
+              </div>
+            </div>
+          </div>
+          <!-- Right Section -->
+          <div class="flex flex-col gap-4">
+            <div
+              class="h-[400px] w-[500px] border-lightBlue300 border justify-center shadow-2xl rounded-2xl bg-[url(./PEC-img.webp)] bg-cover bg-blend-soft-light"
+            >
+              <!--Complaints-->
+              <div class="border border-lightBlue300 rounded-2xl">
+                <h1
+                  class="font-bold text-white hover:scale-110 text-center"
+                  style="text-decoration: underline"
+                >
+                  Recent Complaints
+                </h1>
+              </div>
+              <h1 class="font-bold pl-[200px] pt-[170px] text-red-700">
+                <a class="bg-white opacity-60" href="#">No Complaints Yet!</a>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Anti Ragging -->
+      <div class="bg-deepBlue border-t-2">
+        <h1
+          class="text-center pt-10 font-bold font-mullish text-[48px] text-greenLight"
+        >
+          Know About The Anti-Ragging Policies
+        </h1>
+        <div class="w-full h-full ml-10 flex justify-around">
+          <!-- Left Section -->
+          <div
+            class="flex flex-col gap-6 pt-10 m-10 mb-10 pb-10 w-full lg:w-1/2"
+          >
+            <h1
+              class="font-bold font-mullish text-[40px] text-greenLight role inline-block w-fit h-fit p-10 rounded-2xl shadow-2xl opacity-80"
+            ></h1>
+            <!-- Anti Ragging Details -->
+            <div class="flex gap-4 hover:scale-110 drop-shadow-glow">
+              <p
+                class="text-[20px] font-mullish border flex flex-col p-5 rounded-2xl shadow-2xl text-white"
+              >
+                To register Antiragging Grievances<br />
+                please, go to the AntiRagging website:<br />
+                <a
+                  href="https://www.antiragging.in"
+                  target="_blank"
+                  class="aRagging"
+                  >https://www.antiragging.in</a
+                ><br /><br />
 
-                            Register Complaint on:<br />
-                            <a href="https://www.antiragging.in/complaint_register_form.html" target="_blank"
-                                class="aRagging">
-                                https://www.antiragging.in/complaint_register_form.html </a><br />
-                            or Call on:<br />
-                            1800-180-5522<br />
+                Register Complaint on:<br />
+                <a
+                  href="https://www.antiragging.in/complaint_register_form.html"
+                  target="_blank"
+                  class="aRagging"
+                >
+                  https://www.antiragging.in/complaint_register_form.html </a
+                ><br />
+                or Call on:<br />
+                1800-180-5522<br />
 
-                            Email -:<br />
-                            <a href="mailto:helpline@antiragging.in" class="aRagging">helpline@antiragging.in</a>
-                        </p>
-                    </div>
-                </div>
-                <!-- Right antiragging -->
-                <div>
-                    <img src = "Anti-Ragging.webp" height="200px" width="500px" class="pt-[150px]"> 
-                </div>
+                Email -:<br />
+                <a href="mailto:helpline@antiragging.in" class="aRagging"
+                  >helpline@antiragging.in</a
+                >
+              </p>
+            </div>
+          </div>
+          <!-- Right Section with Image -->
+          <div class="w-full lg:w-1/2 flex justify-center pt-[150px]">
+            <img
+              src="Anti-Ragging.webp"
+              class="max-w-full h-auto lg:max-w-[500px]"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Footer section -->
+       <div class="flex flex-col w-full justify-between px-4 pb-4 pt-4 bg-deepBlueHead text-white font-bold gap-5">
+        <div class="flex justify-center items-center relative">
+            <img src="./logo-footer.jpg" height="150px" width="150px" class="z-[100] relative">
+
+            <hr class="absolute z-[10] bottom-20 left-0 right-0 mx-auto w-full border-t-2 border-gray-300">
+            <span class="absolute z-[100] bottom-7 opacity-50">@PECResolve.com</span>
+        </div>
+        
+        <div class="flex flex-row w-full justify-between px-4 pb-4 pt-4">
+            <div>
+                Punjab Engineering College<br>(Deemed to be University)<br>
+                Sector 12 Chandigarh
+            </div>
+            <div>
+                &copy; 2024 PECResolve. All rights Reserved.
+            </div>
+            <div>
+                support@pecresolve.com
             </div>
         </div>
-
+       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-        var typeData = new Typed(".role", {
-            strings: ["Anti Ragging", "How to Complaint?..."],
-            typeSpeed: 90,
-            startDelay: 1000,
-            loop: true,
-            showCursor: false,
-            backSpeed: 50,
-            backDelay: 1000,
-        });
+      var typeData = new Typed(".role", {
+        strings: ["Anti Ragging", "How to Complaint?..."],
+        typeSpeed: 90,
+        startDelay: 1000,
+        loop: true,
+        showCursor: false,
+        backSpeed: 50,
+        backDelay: 1000,
+      });
     </script>
-</body>
-
+  </body>
 </html>
