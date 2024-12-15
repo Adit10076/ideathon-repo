@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found Section</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">PEC<span>Resolve</span></div>
+        <div class="profile">Profile</div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Find What’s Missing or Return What’s Found – The PECR<span>Resolve</span> Way</h1>
+        <div class="buttons">
+            <button id="reportBtn">Report a Lost Item</button>
+            <button id="searchBtn">Search a Lost Item</button>
+        </div>
+
+        <!-- Form Section -->
+        <section id="formSection" class="hidden">
+            <h2>Report a Lost Item</h2>
+            <form id="lostItemForm">
+                <label for="itemName">Item Name *</label>
+                <input type="text" id="itemName" name="itemName" required>
+
+                <label for="itemDescription">Item Description</label>
+                <textarea id="itemDescription" name="itemDescription" rows="3"></textarea>
+
+                <label for="lastSeenPlace">Last Seen Place</label>
+                <input type="text" id="lastSeenPlace" name="lastSeenPlace">
+
+                <label for="dateLost">Date When Lost</label>
+                <input type="date" id="dateLost" name="dateLost">
+
+                <label for="itemImage">Image (optional)</label>
+                <input type="file" id="itemImage" name="itemImage">
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Search Section -->
+        <section id="searchSection" class="hidden">
+            <h2>Search for a Lost Item</h2>
+            <div class="filters">
+                <label for="filterDate">Filter by Date</label>
+                <input type="date" id="filterDate">
+
+                <label for="filterLocation">Filter by Location</label>
+                <input type="text" id="filterLocation">
+
+                <label for="filterCategory">Filter by Category</label>
+                <input type="text" id="filterCategory">
+
+                <button id="applyFilters">Apply Filters</button>
+            </div>
+
+            <!-- Results Grid -->
+            <div id="resultsGrid">
+                <p>No results to display.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Confirmation Message -->
+    <div id="confirmationMessage" class="hidden">
+        <p>Thank you! Your lost item report has been submitted successfully.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

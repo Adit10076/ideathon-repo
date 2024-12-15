@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f3460;
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00aaff;
+}
+
+header .logo span {
+    color: #e0e0e0;
+}
+
+header .profile {
+    background-color: #00aaff;
+    color: #ffffff; /* Text is now white */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    padding: 2rem;
+}
+
+main h1 {
+    margin-bottom: 2rem;
+    color: #00aaff;
+    font-size: 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+button {
+    background-color: #00aaff;
+    color: #ffffff; /* Text is now white */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0099dd;
+    color: #ffffff; /* Ensure text remains white on hover */
+}
+
+/* Form Section */
+form {
+    background-color: #0f3460;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #e0e0e0;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+form input[type="file"] {
+    background-color: #e0e0e0;
+}
+
+form button {
+    background-color: #00aaff;
+    color: #ffffff; /* Text is now white */
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+form button:hover {
+    background-color: #0099dd;
+    color: #ffffff; /* Ensure text remains white on hover */
+}
+
+/* Search Filters */
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.filters input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Results Grid */
+#resultsGrid {
+    background-color: #0f3460;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+/* Confirmation Message */
+#confirmationMessage {
+    background-color: #0099dd;
+    color: #1a1a2e;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    margin: 1rem auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
